@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="accueil.css" />
-   
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e12656a842.js" crossorigin="anonymous"></script>
     <title>Ohmyfoodaccueil</title>
 </head>
-
 <body>
-<!--TEST-->
-    <header>
 
-    <p class="shrikhand">Ohmyfood</p>
+    <header>
+        <p>Ohmyfood</p>
     </header>
-    <section>
+    <div class="presentation">
         <div class="localisation">
+            <div class="localisation__element">
                 <i class="fas fa-map-marker-alt"></i>
                 <input class="inputsearch" type="search" placeholder="Paris, Belleville" />
-            
+            </div>
         </div>
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="btn">
+        <h1>Réservez le menu</br> qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception,</br> sélectionnés par nos soins.</p>
+        <button>
             Explorez nos restaurants
         </button>
-    </section>
+    </div>
+    <aside>
+        <h1>Fonctionnement</h1>
+        <div class="card card__decoration">
+            <i class="fas fa-mobile-alt"></i>
+            <h2>Choisissez un restaurant</h2>
+        </div>
+        <div class="card card__decoration">
+            <i class="fas fa-list"></i>
+            <h2>Composez votre menu</h2>
+        </div>
+        <div class="card card__decoration">
+            <i class="fas fa-list"></i>
+            <h2>Dégustez au restaurant</h2>
+        </div>
+
+    </aside>
     <section>
         <h1>Restaurants</h1>
-        <article>
+        <article class="article__palette">
             <div class="restaurant_1 img"></div>
             <div class="restaucontainer">
                 <div>
@@ -44,7 +58,7 @@
                 <i class="far fa-heart"></i>
             </div>
         </article>
-        <article>
+        <article class="article__note">
             <div class="restaurant_2 img"></div>
             <div class="restaucontainer">
                 <div>
@@ -54,7 +68,7 @@
                 <i class="far fa-heart"></i>
             </div>
         </article>
-        <article>
+        <article class="article__française">
             <div class="restaurant_3 img"></div>
             <div class="restaucontainer">
                 <div>
@@ -64,7 +78,7 @@
                 <i class="far fa-heart"></i>
             </div>
         </article>
-        <article>
+        <article class="article__delice">
             <div class="restaurant_4 img"></div>
             <div class="restaucontainer">
                 <div>
@@ -77,18 +91,20 @@
 
     </section>
     <footer>
-       <h1 class="shrikhand" >Ohmyfood</h1>
-        <div class="footer__ip">
-        <i class="fas fa-utensils"></i> 
-        <p>Proposer un restaurant</p>
-    </div>
-    <div class="footer__ip" >
-        <i class="fas fa-hands-helping"></i>
-        <p>Devenir partenaire</p>
-    </div>
-    Mentions légales
-    <p><a href="mailto:stephaniereiser@gmail.com">Contact</a></p>
+        <h1>Ohmyfood</h1>
+        <div class="footer__restaurantip">
+            <i class="fas fa-utensils"></i>
+            <a href="#">Proposer un restaurant</a>
+        </div>
+        <div class="footer__handshelpip">
+            <i class="fas fa-hands-helping"></i>
+            <a href="#">Devenir partenaire</a>
+        </div>
+        <div class="legalnotice">
+            <a href="#">Mentions légales</a>
+        </div>
+        <div class="contact">
+            <p><a href="mailto:stephaniereiser@gmail.com">Contact</a></p>
+        </div>
     </footer>
-
-
 </body>

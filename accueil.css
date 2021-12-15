@@ -1,55 +1,172 @@
 @charset "UTF-8";
 /*Principaux éléments*/
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-weight: bold;
-}
-
-header {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.shrikhand {
-  font-family: 'Shrikhand', cursive;
+  font-weight: 8000;
   font-size: 25px;
 }
 
-body {
-  max-width: 750px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Roboto', sans-serif;
+header {
+  height: 100px;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-bottom: 60px;
+  /* Icone flêche*/
+  /*Header des menus*/
+}
+header i {
+  font-size: 35px;
+  padding-right: 15px;
+  padding-left: 35px;
+  color: black;
+}
+header .menu--header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  height: 100px;
+}
+header p {
+  grid-column: 3/4;
+  font-family: "Shrikhand", cursive;
+  font-size: 35px;
 }
 
-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+main {
+  grid-auto-flow: column;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(20, 40px);
+  grid-row-gap: 25px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 750px;
+  margin: auto;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: smaller;
+}
+
+.presentation {
+  padding-bottom: 20px;
+  text-align: center;
+  align-content: center;
+  background-color: #f2f2f2c7;
+}
+
+.localisation {
+  padding: 10px;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  background-color: #F2F2F2;
+}
+.localisation .localisation__element {
+  grid-column: 3/4;
+  grid-row: 1;
+  display: flex;
+}
+.localisation input {
+  padding-left: 10px;
+  border: none;
+  background-color: #F2F2F2;
+}
+.localisation i {
+  padding-left: 50px;
+}
+
+button {
+  background-color: #9356DC;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  box-shadow: 4px 4px 10px #444141;
+}
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+aside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 50px);
+  grid-row-gap: 25px;
+  height: 300px;
+  align-items: center;
+  justify-items: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  align-items: baseline;
+  width: 90%;
+  border-radius: 15px 15px 15px 15px;
+}
+.card i {
+  padding-left: 35px;
+  padding-right: 50px;
+}
+
+.card__decoration {
+  box-shadow: 4px 4px 10px #444141;
   background-color: #F2F2F2;
 }
 
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px 250px 250px 250px 250px;
+  grid-row-gap: 50px;
+  width: 100%;
+  background-color: #F2F2F2;
+  margin-top: 25px;
+  height: 1300px;
+}
+section h1 {
+  grid-column: 1;
+  grid-row: 1;
+  padding-left: 25px;
+}
+
 article {
-  height: 300px;
+  height: 280px;
   width: 90%;
   margin: 20px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
+}
+article h2 {
+  font-size: 20px;
+}
+article .article__palette {
+  grid-column: 1;
+  grid-row: 2;
+}
+article .article__française {
+  grid-column: 1;
+  grid-row: 3;
+}
+article .article__note {
+  grid-column: 1;
+  grid-row: 4;
+}
+article .article__delice {
+  grid-column: 1;
+  grid-row: 5;
 }
 
 .img {
@@ -57,6 +174,9 @@ article {
   height: 180px;
   background-size: cover;
   border-radius: 15px 15px 0 0;
+}
+.img .img__menu {
+  grid-row: 1/4;
 }
 
 .restaurant_1 {
@@ -76,72 +196,58 @@ article {
 }
 
 .restaucontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  align-items: baseline;
+  padding-left: 15px;
   padding-right: 20px;
 }
-
 .restaucontainer i {
   font-size: 25px;
 }
-
 .restaucontainer h2 {
   text-align: left;
 }
 
 footer {
-  padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: grey;
+  padding-left: 25px;
+  grid-auto-flow: column;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 40px);
+  grid-row-gap: 25px;
+  background-color: #444141;
   color: white;
   font-weight: bold;
 }
-
+footer h1 {
+  grid-column: 1/2;
+  font-family: "Shrikhand", cursive;
+  font-size: 15px;
+}
 footer a {
   text-decoration: none;
   color: white;
 }
-
-footer .footer__ip {
-  display: -webkit-box;
-  display: -ms-flexbox;
+footer .footer__restaurantip {
+  grid-column: 1/4;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
 }
-
-footer .footer__ip i {
+footer .footer__handshelpip {
+  grid-column: 1/4;
+  display: flex;
+  align-items: baseline;
+}
+footer i {
   padding-right: 10px;
 }
+footer .legalnotice {
+  grid-column: 1/4;
+}
+footer .contact {
+  grid-column: 1/2;
+}
+
 /*# sourceMappingURL=accueil.css.map */

@@ -1,0 +1,39 @@
+{
+  "devDependencies": {
+    "sass": "^1.44.0"
+  },
+  "name": "p3_reiser_stephanie",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "fill-range": "^7.0.1",
+    "glob-parent": "^5.1.2",
+    "anymatch": "^3.1.2",
+    "is-extglob": "^2.1.1",
+    "is-number": "^7.0.0",
+    "is-binary-path": "^2.1.0",
+    "is-glob": "^4.0.3",
+    "binary-extensions": "^2.2.0",
+    "chokidar": "^3.5.2",
+    "picomatch": "^2.3.0",
+    "readdirp": "^3.6.0",
+    "to-regex-range": "^5.0.1",
+    "normalize-path": "^3.0.0",
+    "braces": "^3.0.2",
+    "immutable": "^4.0.0"
+  },
+  "scripts": {
+   "sass":"sass --watch accueil.scss:accueil.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephReiser/P3_OHMYFFOD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephReiser/P3_OHMYFFOD/issues"
+  },
+  "homepage": "https://github.com/StephReiser/P3_OHMYFFOD#readme",
+  "description": ""
+}
