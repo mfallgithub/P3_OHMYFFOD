@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+}
+h1{
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+ 
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+	max-width: 1500px;
+    margin: auto;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+
+}

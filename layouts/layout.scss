@@ -1,0 +1,308 @@
+/*Entête commune et spécifique accueil/menu*/
+header{
+    height:100px;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+ 
+   /* Icone flêche*/
+    i{
+        font-size: 35px;
+        padding-right: 15px;
+        color: black;
+    
+    }
+    /*Header des menus*/
+    .menu--header{
+        grid-column: 2/5;
+        display: flex;
+        align-items: baseline;
+        justify-content:center;
+        height: 100px;
+       }
+    p {
+        grid-column: 3/4;
+        @include shrikhand;
+        font-size: 35px;
+        @media (min-width: 600px) {
+            padding-left: 40px;
+        } 
+    }
+ }
+/*Présentation de l'entrepise*/
+.presentation{
+    padding-bottom: 20px;
+    text-align: center;
+    align-content: center;
+    background-color: #f2f2f2c7;
+}
+.localisation {
+    padding:10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+    background-color: #F2F2F2;
+    .localisation__element {
+        grid-column: 3/4;
+        grid-row: 1;
+        display: flex;
+              
+    }
+    & input{
+        padding-left: 10px;
+        border: none;
+        background-color: #F2F2F2;
+    }
+    i{
+        padding-left: 50px;
+    }
+}
+/*Cartes accueil*/
+aside{
+    @extend %asidecolumns;
+    grid-template-rows: repeat(4,1fr) ;
+    
+    @media (min-width: 600px) {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    h1{
+        @media (min-width: 600px) {
+            grid-column: 1/4;
+            grid-row: 1;
+        } 
+    }
+ }
+ .card{
+    @extend %flexcard;
+    width: 90%;
+    border-radius: 15px 15px 15px 15px;
+         
+     i{
+         padding-left: 35px;
+         padding-right: 40px;
+     }
+   
+ }
+ /*Groupement de cartes menu*/
+.menu__choice{
+    @extend %asidecolumns;
+    grid-template-rows: repeat(4,1fr) ;  
+    width: 90%;
+    @media (min-width: 600px) {
+      
+        grid-row: 3;
+    } 
+}
+  
+
+
+ .card__menu{
+    justify-content: space-between;
+    @extend %flexcard;
+width: 100%;
+border-radius: 30px 30px 30px 30px;
+padding-left: 15px;
+padding-right: 15px;
+
+@media (min-width: 600px){
+    width: 100%;
+}
+}
+ .card__decoration{
+    @include shadow-button;
+    background-color: #F2F2F2;
+    
+ }
+ .card__decoration--white{
+    
+    background-color: white;
+    
+ }
+.menu__choice--text{
+ 
+  font-size: smaller;
+  
+}
+.price{
+    float:left;
+}
+
+ /*section propre aux menus*/
+ main{
+    height:auto;
+    background-color: #F2F2F2;
+        justify-items: center;
+    display: grid;
+    grid-auto-flow: column;
+        grid-template-columns: 1fr;
+        grid-template-rows:300px 30px 430px 430px 430px 100px;
+        height: auto;
+    @media (min-width: 600px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:600px 50px 500px 100px;
+    }
+    
+
+}
+
+.cardgost{
+    
+    @extend %flexcard;
+    width: 90%;
+    border-radius: 15px 15px 15px 15px;
+    
+    }
+  
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 250px 250px 250px 250px 20px;
+    grid-row-gap:50px;
+    width: 100%;
+    background-color: #F2F2F2;
+    margin-top: 25px;
+    height: auto;
+    @media (min-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:20px 250px 250px 20px;
+    } 
+   
+   h1{
+       grid-column: 1/2;
+       grid-row:1;
+       padding-left: 25px;
+     
+   }
+}
+article{
+  height: 280px;
+  width: 90%;
+  margin: 20px;
+  padding-bottom: 10px;
+  background-color: white;  
+  border-radius: 15px 15px 15px 15px;
+  h2{
+      font-size: 20px;
+  }
+       
+}
+.article__palette{
+    grid-column: 1;
+       grid-row:2;
+       @media (min-width: 600px) {
+        grid-column: 1;
+       grid-row:2;
+    } 
+      }
+.article__française{
+    grid-column: 1;
+    grid-row:3;
+    @media (min-width: 600px) {
+        grid-column: 1;
+       grid-row:3;
+}
+}
+.article__note{
+    grid-column: 1;
+    grid-row:4;
+    @media (min-width: 600px) {
+        grid-column: 2;
+       grid-row:2;
+}
+  }
+.article__delice{
+    grid-column: 1;
+    grid-row:5; 
+    @media (min-width: 600px) {
+        grid-column: 2;
+       grid-row:3;
+}
+}
+.restaucontainer{
+    border-radius:20px 20px 20px 20px ;
+   grid-row: 2;
+    display: flex;
+	justify-content:space-evenly;
+    align-items: center;
+   	align-items: baseline;
+    padding-left:15px;
+    padding-right: 20px;
+    height: 150px;
+    @media (min-width: 600px){
+        grid-column: 2;
+    }
+   
+ i{
+        font-size: 25px;
+        padding-left: 100px;
+     
+    }
+  h2  {
+        text-align: left;
+          
+    }
+    
+      
+}
+
+footer{
+    padding: 25px;
+     grid-auto-flow: column;
+   display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,40px);
+    grid-row-gap:25px;
+    background-color: #444141;
+    color:white;
+    font-weight: bold;
+    @media (min-width: 600px) {
+  display:flex ;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 25px;
+    }
+      
+     h1{
+        grid-column: 1/2;
+         @include shrikhand;
+         font-size: 15px;
+         @media (min-width: 600px) {
+           display:none;
+       
+     }
+       }
+        
+     a{
+        text-decoration: none;
+        color: white;
+     }
+
+.footer__restaurantip{
+    grid-column: 1/4;
+    display: flex;
+    align-items: baseline;
+     
+   }
+  .footer__handshelpip{
+    grid-column: 1/4;
+    display: flex;
+    align-items: baseline;  
+  }
+  
+i{
+    padding-right:10px;
+}
+.legalnotice{
+    grid-column: 1/4;
+    
+}
+.contact{
+    grid-column: 1/2;
+    
+}
+
+     }

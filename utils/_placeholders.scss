@@ -1,0 +1,14 @@
+%flexcard{
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+}
+%asidecolumns{
+    display:grid;
+    grid-template-columns:1fr ;
+    height: auto;
+    grid-auto-flow: column;
+     grid-row-gap: 15px;
+    align-items:flex-end;
+    justify-items: center;  
+}
