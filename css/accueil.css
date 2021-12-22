@@ -36,16 +36,16 @@ body {
 }
 
 button {
-  /*background-color: $color-primary;*/
+  background-color: #9356DC;
   width: 180px;
   height: 40px;
   border-radius: 20px;
   color: white;
   border: none;
-  /*@include shadow-button;*/
+  box-shadow: 4px 4px 10px #444141;
 }
 button:hover {
-  /*background:lighten( $color-secondary , $amount: 10);*/
+  background: #fface8;
   cursor: pointer;
 }
 
