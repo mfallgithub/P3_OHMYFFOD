@@ -1,13 +1,13 @@
 button {
-    background-color: $color-primary;
+    /*background-color: $color-primary;*/
     width: 180px;
     height: 40px;
     border-radius: 20px;
     color: white;
     border: none;
-    @include shadow-button;
+    /*@include shadow-button;*/
    &:hover {
-    background:lighten( $color-secondary , $amount: 10);
+    /*background:lighten( $color-secondary , $amount: 10);*/
     cursor: pointer;
 }
    }

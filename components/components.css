@@ -1,0 +1,61 @@
+button {
+  /*background-color: $color-primary;*/
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  /*@include shadow-button;*/
+}
+button:hover {
+  /*background:lighten( $color-secondary , $amount: 10);*/
+  cursor: pointer;
+}
+
+.btn {
+  grid-row: 6;
+  padding-top: 25px;
+}
+@media (min-width: 600px) {
+  .btn {
+    grid-row: 4;
+    grid-column: 2;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+/*Positionnement de l'image du menu*/
+.img__menu {
+  width: 100%;
+  background-size: cover;
+  height: 300px;
+  grid-row: 1;
+}
+@media (min-width: 600px) {
+  .img__menu {
+    grid-column: 1/4;
+    height: 600px;
+  }
+}
+
+.restaurant_1 {
+  background-image: url(/images/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.restaurant_2 {
+  background-image: url(/images/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+
+.restaurant_3 {
+  background-image: url(/images/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.restaurant_4 {
+  background-image: url(/images/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}/*# sourceMappingURL=components.css.map */
