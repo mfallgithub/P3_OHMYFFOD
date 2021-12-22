@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/*@charset "UTF-8";*/
 .cardgost, .card__menu, .card {
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@ button:hover {
 }
 
 .restaurant_1 {
-  background-image: url(../images/restaurant/jay.jpg);
+  background-image: url(../images/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
 
 .restaurant_2 {
