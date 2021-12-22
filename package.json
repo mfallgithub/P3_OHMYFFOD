@@ -23,7 +23,7 @@
     "immutable": "^4.0.0"
   },
   "scripts": {
-   "sass":"sass --watch accueil.scss:accueil.css"
+   "sass":"sass --watch accueil.scss:css/accueil.css"
   },
   "repository": {
     "type": "git",
