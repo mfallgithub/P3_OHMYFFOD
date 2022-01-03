@@ -94,7 +94,7 @@ button:hover {
 }
 
 .restaurant_4 {
-  background-image: url(../restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(../images/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 
 /*Entête commune et spécifique accueil/menu*/
@@ -406,4 +406,4 @@ footer .contact {
   grid-column: 1/2;
 }
 
-/*# sourceMappingURL=accueil.css.map */
+/*# sourceMappingURL=main.css.map */
